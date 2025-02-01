@@ -83,36 +83,6 @@ O projeto segue uma arquitetura modular, com:
 - **Componentização:** Cada tela possui sua própria responsabilidade clara, permitindo maior manutenção e escalabilidade.
 - **Persistência:** Utiliza o AsyncStorage para salvar pontuações localmente, garantindo que os dados persistam entre sessões.
 
----
-
-## Apresentação para Recrutadores
-
-### Destaques do Código:
-1. **Lógica do Jogo:**
-   - Geração aleatória de blocos.
-   - Detecção de colisões.
-   - Preenchimento de linhas e cálculo de pontuação.
-
-2. **Interface do Usuário:**
-   - Utiliza o `LinearGradient` para criar fundos modernos e agradáveis.
-   - Controles táteis responsivos para movimentar, girar e acelerar os blocos.
-
-3. **Persistência de Dados:**
-   - Armazena a maior pontuação e a pontuação da última partida utilizando AsyncStorage.
-
-4. **Feedback ao Jogador:**
-   - Sons personalizados ao completar linhas ou perder o jogo.
-   - Tela de game over clara e interativa, com opções de reiniciar ou voltar ao menu inicial.
-
-5. **Qualidade do Código:**
-   - Uso de TypeScript para garantir segurança e manutenção.
-   - Estrutura modular que facilita a compreensão e extensão do projeto.
-
-### Sugestões para Apresentação:
-- Explique como a lógica do Tetris foi implementada.
-- Destaque o uso do AsyncStorage e sons personalizados para enriquecer a experiência do jogador.
-- Demonstre o funcionamento do aplicativo em diferentes dispositivos para evidenciar a responsividade.
-- Mostre a organização do código e explique como a separação por responsabilidades facilita a manutenção e o crescimento do projeto.
 
 ---
 
