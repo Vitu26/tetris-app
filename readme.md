@@ -11,6 +11,7 @@ Este é um aplicativo para jogar o clássico jogo Tetris, desenvolvido em React 
 - **Expo Go**: Para facilitar o desenvolvimento, teste e deploy do aplicativo.
 - **AsyncStorage**: Para persistência de dados localmente.
 - **expo-av**: Para reprodução de sons.
+- **expo-linear-gradient**: Para criação de fundos com gradientes.
 
 ---
 
@@ -36,11 +37,12 @@ Este é um aplicativo para jogar o clássico jogo Tetris, desenvolvido em React 
 - Node.js (v14 ou superior)
 - Expo CLI
 - Git
+- Emulador Android ou iOS, ou aplicativo **Expo Go** instalado em um dispositivo móvel
 
 ### Passos:
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/Vitu26/tetris-app.git
+   git clone https://github.com/seu-usuario/tetris-app.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
@@ -54,7 +56,7 @@ Este é um aplicativo para jogar o clássico jogo Tetris, desenvolvido em React 
    ```bash
    expo start
    ```
-5. Escaneie o QR code no terminal ou abra no emulador para executar o app.
+5. Escaneie o QR code no terminal com o **Expo Go** no seu dispositivo ou execute no emulador.
 
 ---
 
@@ -71,6 +73,10 @@ TetrisApp/
 │   ├── utils/
 │   │   ├── gameLogic.ts         # Funções relacionadas à lógica do jogo (colisão, geração de blocos, etc.)
 │   │   ├── storageUtils.ts      # Funções para salvação e recuperação de dados
+│   ├── styles/
+│   │   ├── GameScreenStyles.ts  # Estilos para a tela do jogo
+│   │   ├── HomeScreenStyles.ts  # Estilos para a tela inicial
+│   │   ├── RecordsScreenStyles.ts # Estilos para a tela de recordes
 │   ├── assets/
 │       ├── sounds/              # Sons utilizados no jogo
 │   ├── App.tsx                  # Arquivo principal do aplicativo
@@ -79,10 +85,41 @@ TetrisApp/
 
 ### Ponto-chave:
 O projeto segue uma arquitetura modular, com:
-- **Lógica centralizada:** Toda a lógica de jogo é gerida no arquivo `gameLogic.ts` para reutilização e organização.
-- **Componentização:** Cada tela possui sua própria responsabilidade clara, permitindo maior manutenção e escalabilidade.
-- **Persistência:** Utiliza o AsyncStorage para salvar pontuações localmente, garantindo que os dados persistam entre sessões.
+- **Lógica centralizada:** Toda a lógica do jogo está no arquivo `gameLogic.ts`, facilitando a manutenção e reutilização.
+- **Componentização:** Cada tela possui sua responsabilidade própria, o que aumenta a legibilidade e modularidade.
+- **Persistência:** Utiliza AsyncStorage para salvar pontuações localmente, garantindo persistência entre sessões.
+- **Estilos separados:** Arquivos específicos de estilos para cada tela estão na pasta `styles`, facilitando a organização.
 
+---
+
+## Apresentação para Recrutadores
+
+### Destaques do Código:
+1. **Lógica do Jogo:**
+   - Geração aleatória de blocos.
+   - Detecção de colisões.
+   - Preenchimento de linhas e cálculo de pontuação.
+
+2. **Interface do Usuário:**
+   - Utiliza o `LinearGradient` para criar fundos modernos e agradáveis.
+   - Controles táteis responsivos para movimentar, girar e acelerar os blocos.
+
+3. **Persistência de Dados:**
+   - Armazena a maior pontuação e a pontuação da última partida utilizando AsyncStorage.
+
+4. **Feedback ao Jogador:**
+   - Sons personalizados ao completar linhas ou perder o jogo.
+   - Tela de game over clara e interativa, com opções de reiniciar ou voltar ao menu inicial.
+
+5. **Qualidade do Código:**
+   - Uso de TypeScript para garantir segurança e manutenção.
+   - Estrutura modular que facilita a compreensão e extensão do projeto.
+
+### Sugestões para Apresentação:
+- Explique como a lógica do Tetris foi implementada.
+- Destaque o uso do AsyncStorage e sons personalizados para enriquecer a experiência do jogador.
+- Demonstre o funcionamento do aplicativo em diferentes dispositivos para evidenciar a responsividade.
+- Mostre a organização do código e explique como a separação por responsabilidades facilita a manutenção e o crescimento do projeto.
 
 ---
 
@@ -97,5 +134,5 @@ O projeto segue uma arquitetura modular, com:
 ---
 
 ## Links Importantes
-- Repositório do projeto: [GitHub](https://github.com/Vitu26/tetris-app)
+- Repositório do projeto: [GitHub](https://github.com/seu-usuario/tetris-app)
 
